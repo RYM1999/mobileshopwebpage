@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet"  href="style.css">
+</head>
+<body>
+	<div class="samsung">
+		 <marquee>
+		<br>
+	<p align="center"><h1>Samsung Galary</h1></p></marquee>
+</div>
+	
+	<div class="main">
+		<nav>
+
+			<div class="logo">
+				<img src="img/k.jpg">
+
+			</div>
+			<div class="nav-links">
+				<ul>
+					
+					<li><a href="#">Phone</a></li>
+					<li><a href="#">Accessories</a></li>
+					<li><a href="#">Cart</a></li>
+					<li><a href="#">More Features</a></li>
+				</ul>
+
+			</div>
+		</nav>
+		<div class="information">
+			<div class="overlay"></div>
+			<img src="img/logo.jpg" class="mobile">
+			<div id="circle">
+				<div class="feature one">
+					<img src="img/camera.jpg">
+					<div>
+						<h1>Camera</h1>
+						<p>12mp,wide angke lens</p>
+					</div>
+				</div>
+				<div class="feature two">
+					<img src="img/processor.jpg">
+					<div>
+						<h1>Processor</h1>
+						<p>snapgragon octa-core 11nm</p>
+					</div>
+				</div>
+				<div class="feature three">
+					<img src="img/display.jpg">
+					<div>
+						<h1>Display</h1>
+						<p>6.5" mini-drop fullscreen</p>
+					</div>
+				</div>
+				<div class="feature four">
+					<img src="img/battery.jpg">
+					<div>
+						<h1>Battery Life</h1>
+						<p>5000mah,72Hrs stand by</p>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+		</div>
+		<div class="controls">
+			<img src="img/up.jpg" id="upBtn">
+			<h2>Features</h2>
+			<img src="img/up.jpg" id="downBtn">
+			
+		</div>
+		
+	</div>
+	<script>
+		var circle = document.getElementById("circle");
+		var upBtn = document.getElementById("upBtn");
+		var downBtn  = document.getElementById("downBtn");
+
+		var rotateValue = circle.style.transform;
+		var rotateSum;
+
+		upBtn.onclick = function()
+		{
+			rotateSum = rotateValue + "rotate(-90deg)";
+			circle.style.transform = rotateSum;
+			rotateValue = rotateSum;
+		}
+
+		downBtn.onclick = function()
+		{
+			rotateSum = rotateValue + "rotate(90deg)";
+			circle.style.transform = rotateSum;
+			rotateValue = rotateSum;
+		}
+
+
+	</script>
+
+	
+
+</body>
+</html>
